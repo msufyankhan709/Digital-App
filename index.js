@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../components/About.vue'
 import Services from '../components/Services.vue'
+import Technology from '../components/Technology.vue'
+import Work from '../components/Work.vue'
+import Methodology from '../components/Methodology.vue'
 
 Vue.use(VueRouter)
 
@@ -18,9 +21,24 @@ const routes = [
     component: Services
   },
   {
-    path: '/About',
+    path: '/about',
     name: 'About',
     component: About
+  },
+    {
+    path: '/technology',
+    name: 'Technology',
+    component: Technology
+  },
+  {
+    path: '/work',
+    name: 'Work',
+    component: Work
+  },
+   {
+    path: '/methodology',
+    name: 'Methodology',
+    component: Methodology
   },
   {
     path: '/about',

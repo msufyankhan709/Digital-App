@@ -1,9 +1,11 @@
 <template>
-  <div></div>
+  <div>Work is working</div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Working",
+};
 </script>
 
 <style lang="scss" scoped></style>

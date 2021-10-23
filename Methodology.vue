@@ -1,15 +1,13 @@
 <template>
-    <div>
-
-    </div>
+  <div>
+    <h1>Methodology is working</h1>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+  name: "Methodology",
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
