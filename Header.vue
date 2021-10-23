@@ -42,50 +42,77 @@
           </v-col>
         </v-row>
       </v-menu>
-      <v-menu offset-y open-on-hover max-width="600px">
+      <v-menu offset-y open-on-hover>
         <template v-slot:activator="{ on, attrs }">
           <v-btn v-bind="attrs" v-on="on" @click="goto" plain class="ml-8"
             >Services</v-btn
           >
         </template>
-        <v-row style="background-color:black;" class="mt-4">
-          <v-col cols="4" class="mt-4 ml-4">
+        <v-row style="background-color:black; width:1000px" class="mt-4">
+          <v-col cols="3" class="mt-4 ml-8 pl-8">
             <h3>Mobile Apps</h3>
             <p class="text-caption">
-              Native iOS Apps Native Android Apps Cross Platform Hybrid Apps
+              Native iOS Apps Apps
             </p>
-            <h3>Web Development</h3>
             <p class="text-caption">
-              Ready to go an extra mile to deliver great software solutions.
+              Native Android Apps
             </p>
-            <h3>QA</h3>
-            <p class="text-caption">
-              To discuss your idea and consult with our technology experts.
-            </p>
-          </v-col>
-          <v-col cols="3" class="mt-4 ml-8">
-            <h3>Design</h3>
-            <p class="text-caption">
-              Global startups, businesses, and enterprise since 1997.
-            </p>
-            <h3>DevOps</h3>
-            <p class="text-caption">
-              Global startups, businesses, and enterprise since 1997.
-            </p>
+            <p class="text-caption">Cross Platform</p>
+            <p class="text-caption">Hybrid Apps</p>
+            <p class="text-caption">PWA</p>
             <h3>IoT</h3>
             <p class="text-caption">
-              Explore current openings and apply to be a part of IndiaNIC.
+              Industrial Automation
             </p>
+            <p class="text-caption">Home Automation</p>
+            <p class="text-caption">Smart Healthcare</p>
+            <p class="text-caption">Conneted Devices</p>
           </v-col>
-          <v-col cols="3" class="mt-4 ml-8">
+          <v-col cols="4" class="mt-4">
+            <h3>Web Development</h3>
+            <p class="text-caption">
+              Enterprise solutions
+            </p>
+            <p class="text-caption">ECommerce</p>
+            <p class="text-caption">CMS</p>
+            <p class="text-caption">API&Backend</p>
+            <p class="text-caption">Custom Development</p>
             <h3>Marketing</h3>
             <p class="text-caption">
-              Global startups, businesses, and enterprise since 1997.
+              Content
             </p>
-            <h3>AI&ML</h3>
+            <p class="text-caption">PPC Campaigns</p>
+            <p class="text-caption">Social Media</p>
+          </v-col>
+          <v-col cols="2" class="mt-4">
+            <h3>Design</h3>
             <p class="text-caption">
-              Explore current openings and apply to be a part of IndiaNIC.
+              Discovery Workshop
             </p>
+            <p class="text-caption">Analysis</p>
+            <p class="text-caption">Wireframe</p>
+            <p class="text-caption">UI/UX Design</p>
+            <h3 class="pt-4 mt-8">AI&ML</h3>
+            <p class="text-caption">
+              Strategic planning
+            </p>
+            <p class="text-caption">Chatbots</p>
+            <p class="text-caption">Analytics</p>
+            <p class="text-caption">Visual Recognition</p>
+          </v-col>
+          <v-col cols="2" class="mt-4">
+            <router-link to="/" style="text-decoration:none"
+              ><h3>DevOps</h3></router-link
+            >
+            <p class="text-caption">Setups</p>
+            <p class="text-caption">Automation</p>
+            <p class="text-caption">Continuous Delivery</p>
+            <p class="text-caption">Monitoring</p>
+            <h3 class="pt-4 mt-8">QA</h3>
+            <p class="text-caption">Manaual QA Testing</p>
+            <p class="text-caption">Web Testing Automation</p>
+            <p class="text-caption">Mobile App Testing</p>
+            <p class="text-caption">API Testing</p>
           </v-col>
         </v-row>
       </v-menu>
@@ -95,14 +122,60 @@
             >Technology</v-btn
           >
         </template>
-        <v-row style="background-color:black" class="mt-4">
-          <v-list-item v-for="(item, index) in items" :key="index">
-            <v-list-item-title style="color:white"
-              >{{ item.title }}&nbsp;&nbsp;&nbsp;&nbsp;{{
-                item.title
-              }}</v-list-item-title
-            >
-          </v-list-item>
+        <v-row style="background-color:black; width:600px" class="mt-4">
+          <v-col cols="4" class="mt-4 ml-8 pl-8">
+            <h3>Mobile</h3>
+            <p class="text-caption">
+              iOS
+            </p>
+            <p class="text-caption">Android</p>
+            <p class="text-caption">React Native</p>
+            <p class="text-caption">Ionic</p>
+            <h3 class="mt-2 pt-2">Infra&DevOps</h3>
+            <p class="text-caption">
+              AWS
+            </p>
+            <p class="text-caption">Azure</p>
+            <p class="text-caption">Google Cloud</p>
+            <p class="text-caption">Selenium</p>
+            <p class="text-caption">Jenkins</p>
+            <p class="text-caption">Appium</p>
+          </v-col>
+          <v-col cols="3" class="mt-4">
+            <h3>Backend</h3>
+            <p class="text-caption">
+              Node
+            </p>
+            <p class="text-caption">PHP</p>
+            <p class="text-caption">Java</p>
+            <p class="text-caption">Python</p>
+            <h3 class="mt-6">Database</h3>
+            <p class="text-caption">
+              MySQL
+            </p>
+            <p class="text-caption">PostgreSQL</p>
+            <p class="text-caption">Firebase</p>
+            <p class="text-caption">MongoDB</p>
+            <p class="text-caption">Oracle</p>
+          </v-col>
+
+          <v-col cols="4" class="mt-4">
+            <h3>Front End</h3>
+            <p class="text-caption">
+              Angular
+            </p>
+            <p class="text-caption">ReactJs</p>
+            <p class="text-caption">Vue</p>
+            <p class="text-caption">Typescript</p>
+            <h3 class="mt-2 pt-2">CMS</h3>
+            <p class="text-caption">
+              Magento
+            </p>
+            <p class="text-caption">WordPress</p>
+            <p class="text-caption">Shopify</p>
+            <p class="text-caption">Drupal</p>
+            <p class="text-caption">Umbraco</p>
+          </v-col>
         </v-row>
       </v-menu>
       <v-menu offset-y open-on-hover>
@@ -111,14 +184,55 @@
             >Work</v-btn
           >
         </template>
-        <v-row style="background-color:black" class="mt-4">
-          <v-list-item v-for="(item, index) in items" :key="index">
-            <v-list-item-title style="color:white"
-              >{{ item.title }}&nbsp;&nbsp;&nbsp;&nbsp;{{
-                item.title
-              }}</v-list-item-title
-            >
-          </v-list-item>
+        <v-row style="background-color:black; width:900px;" class="mt-4">
+          <v-col class="mt-4 ml-4 pl-4">
+            <v-img
+              height="120px"
+              width="140px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJW75Ah83mwW4MJpECniY1ZId1o1sTAIvpZw&usqp=CAU"
+            ></v-img>
+            <h3>Popular Brands</h3>
+            <p class="text-caption">
+              A gallery of astonishing solutions dekivered to the most
+              recognized brands.
+            </p>
+          </v-col>
+          <v-col class="mt-4">
+            <v-img
+              height="120px"
+              width="140px"
+              src="https://hvtimes.com/wp-content/uploads/2021/02/web-design-Dublin.png"
+            ></v-img>
+            <h3>Case Studies</h3>
+            <p class="text-caption">
+              Explore how IndiaNIC delivered IT solutions to startups &
+              Enterprises.
+            </p>
+          </v-col>
+          <v-col class="mt-4">
+            <v-img
+              height="120px"
+              width="140px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9JDarHFOfBVfUqb08472kjt1zGQ83zr7Bg&usqp=CAU"
+            ></v-img>
+            <h3>Portfolio</h3>
+            <p class="text-caption">
+              A glimpse to our experties on design, development and industry
+              experience.
+            </p>
+          </v-col>
+          <v-col class="mt-4">
+            <v-img
+              height="120px"
+              width="140px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGaJBY-vRCNIMdG2Kz-BNuTzeJKyMX-sIGA&usqp=CAU"
+            ></v-img>
+            <h3>Products</h3>
+            <p class="text-caption">
+              Digital tools developed by us for businesses to be more
+              productive.
+            </p>
+          </v-col>
         </v-row>
       </v-menu>
       <v-menu offset-y open-on-hover>
@@ -127,14 +241,29 @@
             >Methodology</v-btn
           >
         </template>
-        <v-row style="background-color:black" class="mt-4">
-          <v-list-item v-for="(item, index) in items" :key="index">
-            <v-list-item-title style="color:white"
-              >{{ item.title }}&nbsp;&nbsp;&nbsp;&nbsp;{{
-                item.title
-              }}</v-list-item-title
-            >
-          </v-list-item>
+        <v-row style="background-color:black; width:500px" class="mt-4">
+          <v-col cols="5" class="mt-4 ml-4">
+            <h3>Discovery</h3>
+            <p class="text-caption">
+              Transforming ideas into a measureable scope with functional UI/UX
+              Design.
+            </p>
+            <h3>Remote Team</h3>
+            <p class="text-caption">
+              Form an expert team who works remotely, under your supervision.
+            </p>
+          </v-col>
+          <v-col cols="5" class="mt-4 ml-8">
+            <h3>Project Execution</h3>
+            <p class="text-caption">
+              Get to know how we balance the critical triangle of Cost, Time and
+              Scope.
+            </p>
+            <h3>Project Review</h3>
+            <p class="text-caption">
+              Proactive review at every satge for the efficient delivery.
+            </p>
+          </v-col>
         </v-row>
       </v-menu>
       <v-btn dark3 class="blue darken-3">
@@ -156,6 +285,12 @@ export default {
         { title: "Click Me" },
         { title: "Click Me" },
         { title: "Click Me 2" },
+      ],
+      itemse: [
+        { name: "Click Me" },
+        { name: "Click Me" },
+        { name: "Click Me" },
+        { name: "Click Me 2" },
       ],
     };
   },
