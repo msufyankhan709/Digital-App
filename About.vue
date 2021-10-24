@@ -1,13 +1,20 @@
 <template>
-  <div>
-    <h1>Hello eyeryone</h1>
-  </div>
+  <v-app>
+    <v-container fluid>
+      <v-card>
+        <v-card-title>Sufyan Khan</v-card-title>
+        <v-card-text
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+          exercitationem dolores debitis ipsam accusamus maxime vel mollitia
+          voluptatem ab! Voluptatum nostrum deserunt laborum beatae accusantium!
+          Vitae, dolorum eligendi! Ipsum, esse.</v-card-text
+        >
+      </v-card>
+    </v-container>
+  </v-app>
 </template>
-
 <script>
 export default {
   name: "About",
 };
 </script>
-
-<style lang="scss" scoped></style>
